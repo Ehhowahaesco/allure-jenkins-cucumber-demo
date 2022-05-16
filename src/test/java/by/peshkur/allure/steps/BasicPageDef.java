@@ -8,7 +8,8 @@ public class BasicPageDef {
 
     @Then("Click {string} button")
     public void clickButton(String arg0) {
-       // basicPage.clickButton(arg0);
+        basicPage.clickButton("Поиск в Google");
+
     }
 
     @Then("Click {string} button span")

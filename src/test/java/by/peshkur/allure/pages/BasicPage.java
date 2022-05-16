@@ -8,7 +8,8 @@ import static com.codeborne.selenide.Selenide.$;
 public class BasicPage {
 
     public void clickButton(String text) {
-        $(By.xpath("//div[text()='" + text + "']")).click();
+        $(By.xpath("//input[@title='Поиск']")).sendKeys("123");
+        $(By.xpath("//div[@class='CqAVzb lJ9FBc']//input[@name='btnK']")).click();
     }
 
     public void clickButtonSpan(String text) {
